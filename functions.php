@@ -1,5 +1,7 @@
 <?php
 
+  $gamPath = "/home/gamuser/bin/gam7/gam ";
+
   function whatisLookup($email) {
     $result = shell_exec("/home/gamuser/bin/gam/gam whatis $email");
     $result_array = explode("\n",$result);
@@ -45,4 +47,9 @@
     return array ($managers, $members);
   }
 
+  function changeLicense($email, $license) {
+    # gam user stehnce0 update license 1010070001 from 1010070004
+    $result = shell_exec("/home/gamuser/bin/gam/gam user $email license $license");
+    return $result;
+  }
 ?>

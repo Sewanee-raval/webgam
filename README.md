@@ -40,3 +40,15 @@ This is the only real protection I have in this example.  This is what controls 
 This is a basic form entry page that allows you to enter an email address which will be passed to functions.php for resolution.
 ## functions.php
 This is where GAM is called, and the results are retrieved, and shown to the user.  At this time, it checks the email address to determine if it is a user or group.  If it is a user, it returns the vacation responder as well as any delegates on the account.  If it is a group, it returns the managers, and members.
+
+
+# TODO
+add menu items for other GAM commands
+    Change license type for user
+    
+add additional security measures
+add logging
+add error handling
+add more options for output formatting
+add ability to input / process csv files
+
